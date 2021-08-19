@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+
+.container{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+}
+
+.mushaf{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.mushaf img{
+    width: 12rem;
+    transition: all 0.75s ease-out;
+    z-index: 2;
+}
+
+.circle{
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to top,
+        rgba(160, 137, 6, 0.76),
+        rgba(160, 2, 2, 0.747),
+        rgba(1, 65, 1, 0.795)
+    );
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.info h1{
+    font-size: 2.5rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3{
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    transition: all 0.75s ease-out;
+    font-weight: lighter;
+
+}
+
+.juz {
+    display: flex;
+    transition: all 0.75s ease-out;
+    justify-content: space-between;
+}
+
+.juz button{
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+button.active{
+    background: #585858;
+    color: #ffffff;
+}
+
+.purchase{
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+    margin-bottom: 5rem;
+}
+
+.purchase button{
+    width: 100%;
+    padding: 1rem 0rem;
+    background: rgba(160, 2, 2, 0.747);
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+
+}
+
+.purchase button:hover{
+    font-size: 75%;
+}
